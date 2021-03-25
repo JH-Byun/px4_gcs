@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/dongjae/catkin_ws/devel/include/",
+                "/opt/ros/melodic/include/",
+                "/home/dongjae/catkin_ws/src/dynamixel2/include/",
+                "/home/dongjae/catkin_ws/src/ilqr/include/",
+                "/home/dongjae/catkin_ws/src/multirotor/commander/include/",
+                "/home/dongjae/catkin_ws/src/multirotor/px4_gcs/include/",
+                "/home/dongjae/catkin_ws/src/multirotor/rate_controller/include/",
+                "/home/dongjae/catkin_ws/src/multirotor/trajectory_generation/include/",
+                "/home/dongjae/catkin_ws/src/multirotor/px4_gcs/ui",
+                "/usr/include/**",
+                "/usr/include/eigen3/"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
