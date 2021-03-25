@@ -1,8 +1,10 @@
-# PX4 Firmware for ICSL Multirotor Team #
+# PX4 Firmware for LARR Multirotor Team #
 
 ## Contributors ##
 * #### *Hoseong Seo* (hosung9009@gmail.com) ####
 * #### *Clark Youngdong Son* (clark.y.d.son@gmail.com) ####
+* #### *Dongjae Lee* (djlee@gmail.com) ####
+* #### *Jeonghyun Byun* (quswjdgus97@snu.ac.kr) ####
 
 ## Installation Guide ##
 * #### QtCreator ####
