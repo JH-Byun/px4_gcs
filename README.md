@@ -3,7 +3,7 @@
 ## Contributors ##
 * #### *Hoseong Seo* (hosung9009@gmail.com) ####
 * #### *Clark Youngdong Son* (clark.y.d.son@gmail.com) ####
-* #### *Dongjae Lee* (djlee@gmail.com) ####
+* #### *Dongjae Lee* (dongjae713@gmail.com) ####
 * #### *Jeonghyun Byun* (quswjdgus97@snu.ac.kr) ####
 
 ## Installation Guide ##
