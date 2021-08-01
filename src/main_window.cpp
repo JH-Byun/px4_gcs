@@ -64,12 +64,14 @@ ICSL_GCS::ICSL_GCS(int argc, char** argv, QWidget *parent)
 	// key_R = new QShortcut(Qt::Key_R, ui.centralwidget); // robotic arm initial config.
 
 	// ADDED - JH
-	key_0 = new QShortcut(Qt::Key_0, ui.centralwidget);
 	key_1 = new QShortcut(Qt::Key_1, ui.centralwidget);
 	key_2 = new QShortcut(Qt::Key_2, ui.centralwidget);
 	key_3 = new QShortcut(Qt::Key_3, ui.centralwidget);
 	key_4 = new QShortcut(Qt::Key_4, ui.centralwidget);
 	key_5 = new QShortcut(Qt::Key_5, ui.centralwidget);
+	key_6 = new QShortcut(Qt::Key_6, ui.centralwidget);
+	key_7 = new QShortcut(Qt::Key_7, ui.centralwidget);
+	key_8 = new QShortcut(Qt::Key_8, ui.centralwidget);
 
 	QObject::connect( key_P, SIGNAL(activated()), this, SLOT(on_btn_P_pressed()) );
 	QObject::connect( key_O, SIGNAL(activated()), this, SLOT(on_btn_O_pressed()) );
@@ -93,12 +95,14 @@ ICSL_GCS::ICSL_GCS(int argc, char** argv, QWidget *parent)
 	// QObject::connect( key_R, SIGNAL(activated()), this, SLOT(on_btn_R_pressed()) );
 
 	// ADDED - JH
-	QObject::connect( key_0, SIGNAL(activated()), this, SLOT(on_btn_0_pressed()) );
 	QObject::connect( key_1, SIGNAL(activated()), this, SLOT(on_btn_1_pressed()) );
 	QObject::connect( key_2, SIGNAL(activated()), this, SLOT(on_btn_2_pressed()) );
 	QObject::connect( key_3, SIGNAL(activated()), this, SLOT(on_btn_3_pressed()) );
 	QObject::connect( key_4, SIGNAL(activated()), this, SLOT(on_btn_4_pressed()) );
 	QObject::connect( key_5, SIGNAL(activated()), this, SLOT(on_btn_5_pressed()) );
+	QObject::connect( key_6, SIGNAL(activated()), this, SLOT(on_btn_6_pressed()) );
+	QObject::connect( key_7, SIGNAL(activated()), this, SLOT(on_btn_7_pressed()) );
+	QObject::connect( key_8, SIGNAL(activated()), this, SLOT(on_btn_8_pressed()) );
 
 	setupGraph();
 }
@@ -127,12 +131,14 @@ ICSL_GCS::~ICSL_GCS()
 	// delete key_R;
 
 	// ADDED - JH
-	delete key_0;
 	delete key_1;
 	delete key_2;
 	delete key_3;
 	delete key_4;
 	delete key_5;
+	delete key_6;
+	delete key_7;
+	delete key_8;
 }
 
 /** slots **/
@@ -329,12 +335,14 @@ void ICSL_GCS::set_keyinput(int key)
 		case KEY_ENTER: on_btn_Enter_pressed(); break;
 
 		// ADDED - JH
-		case KEY_0: on_btn_0_pressed(); break;
 		case KEY_1: on_btn_1_pressed(); break;
-		case KEY_2: on_btn_1_pressed(); break;
-		case KEY_3: on_btn_1_pressed(); break;
-		case KEY_4: on_btn_1_pressed(); break;
-		case KEY_5: on_btn_1_pressed(); break;
+		case KEY_2: on_btn_2_pressed(); break;
+		case KEY_3: on_btn_3_pressed(); break;
+		case KEY_4: on_btn_4_pressed(); break;
+		case KEY_5: on_btn_5_pressed(); break;
+		case KEY_6: on_btn_6_pressed(); break;
+		case KEY_7: on_btn_7_pressed(); break;
+		case KEY_8: on_btn_8_pressed(); break;
 		
 		default: break;
 	}

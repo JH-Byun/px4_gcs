@@ -42,10 +42,10 @@
 #include <sstream>
 #include <fstream>
 
-// ADDED - JH
-#include <dynamixel2/goalCurrent.h>
-
 #define PX4_LOSS_TIME 2.0
+
+// ADDED - JH
+#define PI 3.141592
 
 namespace px4_gcs 
 {
@@ -124,39 +124,32 @@ public:
 	// {std_srvs::SetBool cmd; srv_client_[14].call(cmd);}
 
 	// ADDED - JH
-	void JH_con_mode_set(int idx)
+	void dynamixel_setpoint(int idx, bool increase)
 	{
 		mavros_msgs::CommandInt cmd;
-		dynamixel2::goalCurrent goal_cur_;
-		cmd.request.command = 0;	
-		goal_cur_.request.data = true;
+		cmd.request.param1 = 0.0;
+		cmd.request.param2 = 0.0;
+		cmd.request.param3 = 0.0;
+		cmd.request.param4 = 0.0;
 
 		switch( idx )
 		{
-			case 0:
-				cmd.request.command = 0;
-				break;
 			case 1:
-				cmd.request.command = 1;
-				goal_cur_.request.data = false;
+				increase ? cmd.request.param1 = PI / 36 : cmd.request.param1 = - PI / 36;
 				break;
 			case 2:
-				cmd.request.command = 2;
+				increase ? cmd.request.param2 = PI / 36 : cmd.request.param2 = - PI / 36;
 				break;
 			case 3:
-				cmd.request.command = 3;
+				increase ? cmd.request.param3 = PI / 36 : cmd.request.param3 = - PI / 36;
 				break;
 			case 4:
-				cmd.request.command = 4;
-				break;
-			case 5:
-				cmd.request.command = 5;
+				increase ? cmd.request.param4 = PI / 36 : cmd.request.param4 = - PI / 36;
 				break;
 			default:
 				break;
 		}
 		srv_client_[13].call( cmd );
-		srv_client_[14].call( goal_cur_ );
 	}
 
 Q_SIGNALS:

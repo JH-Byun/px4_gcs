@@ -109,9 +109,7 @@ bool QNode::init()
 
 		// ADDED - JH
 		srv_client_[13] = n.serviceClient<mavros_msgs::CommandInt>
-			("am_controller/con_mode");		
-		srv_client_[14] = n.serviceClient<dynamixel2::goalCurrent>
-			("dynamixel/goalCurrent_set");
+			("am_controller/dynamixel_setpoint");
 
 		// parse kill switch channel
 		pn.getParam("kill_switch_ch", kill_switch_ch_);
