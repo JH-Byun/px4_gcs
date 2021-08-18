@@ -1,4 +1,4 @@
-# PX4 Firmware for LARR Multirotor Team #
+# PX4_GCS #
 
 ## Contributors ##
 * #### *Hoseong Seo* (hosung9009@gmail.com) ####
