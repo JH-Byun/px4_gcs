@@ -79,10 +79,6 @@ class ICSL_GCS : public QMainWindow
 		void on_btn_2_pressed(){ qnode.dynamixel_setpoint(1, true);  qnode.pub_key(KEY_2);}
 		void on_btn_3_pressed(){ qnode.dynamixel_setpoint(2, false); qnode.pub_key(KEY_3);}
 		void on_btn_4_pressed(){ qnode.dynamixel_setpoint(2, true);  qnode.pub_key(KEY_4);}
-		void on_btn_5_pressed(){ qnode.dynamixel_setpoint(3, false); qnode.pub_key(KEY_5);}
-		void on_btn_6_pressed(){ qnode.dynamixel_setpoint(3, true); qnode.pub_key(KEY_6);}
-		void on_btn_7_pressed(){ qnode.dynamixel_setpoint(4, false); qnode.pub_key(KEY_7);}
-		void on_btn_8_pressed(){ qnode.dynamixel_setpoint(4, true); qnode.pub_key(KEY_8);}
 
 		// pushbutton interaction
 		void on_pushButton_connect_ros_clicked(){ qnode.init(); }
@@ -130,10 +126,6 @@ class ICSL_GCS : public QMainWindow
 		QShortcut* key_2;
 		QShortcut* key_3;
 		QShortcut* key_4;
-		QShortcut* key_5;
-		QShortcut* key_6;
-		QShortcut* key_7;
-		QShortcut* key_8;
 		
 		void setupGraph();
 };
