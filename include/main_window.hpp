@@ -3,8 +3,10 @@
 
 #define QCUSTOMPLOT_USE_LIBRARY
 
-#include <QtGui/QMainWindow>
-#include <QtGui/QWidget>
+// #include <QtGui/QMainWindow>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets>
+#include <QtGui/QWidgetList>
 #include <QObject>
 #include <QShortcut>
 #include "ui_v2_gcs_simple.h"

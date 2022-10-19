@@ -1,7 +1,8 @@
 #ifndef px4_gcs_KEYBOARD_MODULE_H
 #define px4_gcs_KEYBOARD_MODULE_H
 
-#include <QtGui/QWidget>
+// #include <QtGui/QWidget>
+#include <QtGui/QWidgetList>
 #include <QObject>
 #include <QShortcut>
 

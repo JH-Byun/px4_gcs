@@ -334,7 +334,8 @@ void ICSL_GCS::set_keyinput(int key)
 
 void ICSL_GCS::set_window_title(const char* name)
 {
-	setWindowTitle(QApplication::translate("ICSL_GCS", name, 0, QApplication::UnicodeUTF8));
+	// setWindowTitle(QApplication::translate("ICSL_GCS", name, 0, QApplication::UnicodeUTF8));
+	setWindowTitle(QApplication::translate("ICSL_GCS", name, 0));
 }
 
 void ICSL_GCS::set_pwms(double* buf)
