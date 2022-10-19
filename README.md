@@ -1,5 +1,8 @@
 # PX4_GCS #
 
+## Updates ##
+* Can be also utilized with Qt5
+
 ## Contributors ##
 * #### *Hoseong Seo* (hosung9009@gmail.com) ####
 * #### *Clark Youngdong Son* (clark.y.d.son@gmail.com) ####
