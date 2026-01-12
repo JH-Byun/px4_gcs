@@ -1,8 +1,8 @@
 # PX4_GCS #
 
 ## System ##
-Ubuntu: 18.04, 20.04
-ROS: ROS melodic, ROS noetic
+**Ubuntu**: 18.04, 20.04 <br>
+**ROS**: ROS melodic, ROS noetic
 
 ## Updates ##
 * Can be also utilized with Qt5
