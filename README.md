@@ -14,6 +14,8 @@
 * #### *Jeonghyun Byun* (quswjdgus97@snu.ac.kr) ####
 
 ## Installation Guide ##
+* #### Dependencies ####
+1. ros-keyboard: https://github.com/lrse/ros-keyboard/tree/master 
 * #### QtCreator ####
 ```
 $ sudo apt-get install qtcreator
