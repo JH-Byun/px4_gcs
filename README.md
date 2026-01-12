@@ -19,8 +19,8 @@
 $ sudo apt install libsdel1.2-dev
 ````
 * #### Dependencies ####
-  ros-keyboard: https://github.com/lrse/ros-keyboard/tree/master
-  mavros:
+  1. ros-keyboard: https://github.com/lrse/ros-keyboard/tree/master <br>
+  2. mavros:
 ````
 sudo apt-get install ros-${ROS_DISTRO}-mavros ros-${ROS_DISTRO}-extras ros-${ROS_DISTRO}-mavros-msgs
 ```` 
