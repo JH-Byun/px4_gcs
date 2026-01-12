@@ -14,8 +14,12 @@
 * #### *Jeonghyun Byun* (quswjdgus97@snu.ac.kr) ####
 
 ## Installation Guide ##
+* #### Install SDL ####
+````
+$ sudo apt install libsdel1.2-dev
+````
 * #### Dependencies ####
-1. ros-keyboard: https://github.com/lrse/ros-keyboard/tree/master 
+  ros-keyboard: https://github.com/lrse/ros-keyboard/tree/master 
 * #### QtCreator ####
 ```
 $ sudo apt-get install qtcreator
